@@ -12,13 +12,14 @@ class Api::V1::TasksController < ApplicationController
 
     def create
         @task = Task.create!(task_params)
-        # byebug
+        render json: @task
     end
 
     def update
     end
 
     def destroy
+       Task.find(params[:id]).destroy
     end 
 
 
