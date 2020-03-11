@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 2020_01_08_212750) do
     t.string "category"
     t.integer "predicted_pom"
     t.string "environment"
+    t.integer "priority_order"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
