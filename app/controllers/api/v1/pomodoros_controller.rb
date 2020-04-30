@@ -14,12 +14,10 @@ class Api::V1::PomodorosController < ApplicationController
         @pomodoro = Pomodoro.create(pomodoro_params)
     end
 
-
     private
 
     def pomodoro_params
         params.require(:pomodoro).permit(:timer_length, :break_length)
     end 
-
 
 end

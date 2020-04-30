@@ -12,7 +12,6 @@ class Api::V1::TasksController < ApplicationController
 
     def create
         @task = Task.create!(task_params)
-        # byebug
     end
 
     def update
@@ -21,12 +20,10 @@ class Api::V1::TasksController < ApplicationController
     def destroy
     end 
 
-
     private
 
     def task_params
         params.require(:task).permit(:description, :user_id, :importance, :urgency, :pomodoros, :complete_status, :category, :predicted_pom, :environment)
-    end 
-
+    end
 
 end

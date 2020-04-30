@@ -14,14 +14,10 @@ class Api::V1::ListsController < ApplicationController
         @list = List.create(list_params)
     end
 
-
     private
 
     def list_params
         params.require(:list).permit(:title)
-    end 
-
-
-
+    end
 
 end
