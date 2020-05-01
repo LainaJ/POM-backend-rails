@@ -15,7 +15,6 @@ class Api::V1::ListsController < ApplicationController
     end
 
     private
-
     def list_params
         params.require(:list).permit(:title)
     end
