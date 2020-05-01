@@ -11,6 +11,7 @@ class CreateTasks < ActiveRecord::Migration[6.0]
       t.string :category 
       t.integer :predicted_pom
       t.string :environment
+      t.integer :priority_order
 
       t.timestamps
     end
