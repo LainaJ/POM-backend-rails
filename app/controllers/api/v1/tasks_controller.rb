@@ -12,10 +12,7 @@ class Api::V1::TasksController < ApplicationController
 
     def create
         @task = Task.create!(task_params)
-<<<<<<< HEAD
-=======
         render json: @task
->>>>>>> 2267bba924c292cdc86af2b5f1413124a64c9ee2
     end
 
     def update
